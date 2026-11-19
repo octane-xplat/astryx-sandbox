@@ -1,0 +1,52 @@
+{
+	"contentMappers": [
+		{
+			"package": "@tsrx/content-mapper",
+			"extensions": [
+				".tsrx"
+			]
+		}
+	],
+	"compilerOptions": {
+		"jsxImportSource": "@octane-xplat/jsx/dom",
+		"types": [
+			"vite/client"
+		],
+		"lib": [
+			"ESNext",
+			"DOM",
+			"DOM.Iterable"
+		],
+		"module": "esnext",
+		"target": "ES2020",
+		"moduleResolution": "bundler",
+		"moduleSuffixes": [
+			"",
+			".web",
+			".ios",
+			".android",
+			".mobile",
+			".native",
+			".macos",
+			".linux",
+			".gtk",
+			".windows"
+		],
+		"strict": true,
+		"skipLibCheck": true,
+		"jsx": "preserve",
+		"noEmit": true,
+		"isolatedModules": true,
+		"allowImportingTsExtensions": true,
+		"verbatimModuleSyntax": true,
+		"experimentalDecorators": true
+	},
+	"include": [
+		"src/**/*"
+	],
+	"exclude": [
+		"**/*.test.*",
+		"**/node_modules",
+		"scripts"
+	]
+}

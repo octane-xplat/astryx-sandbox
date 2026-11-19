@@ -1,0 +1,45 @@
+{
+	"name": "@xplat/astryx-sandbox",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"exports": {
+		"./examples/*": "./src/examples/*",
+		"./icons": "./src/icons.ts",
+		"./styles.css": "./src/sandbox.css",
+		"./template-assets/*": "./public/template-assets/*"
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"typecheck": "tsc --runExternalCode --noEmit -p tsconfig.json",
+		"coverage": "node scripts/generate-coverage.mjs",
+		"verify:web": "node scripts/verify-web.mts",
+		"verify:authored": "node scripts/verify-authored.mts",
+		"verify:pages": "node scripts/verify-pages.mts",
+		"sameframe": "sameframe compare --config sameframe.yaml --json"
+	},
+	"devDependencies": {
+		"@octane-xplat/build": "0.20.0",
+		"@octane-xplat/cli": "0.20.0",
+		"@octane-xplat/files": "0.20.0",
+		"@octane-xplat/jsx": "0.20.0",
+		"@octane-xplat/ui": "0.20.0",
+		"@octanejs/vite-plugin": "0.6.0",
+		"@tsrx/content-mapper": "0.1.2",
+		"@tsrx/oxc": "0.23.0",
+		"octane": "0.17.0",
+		"playwright": "1.63.0",
+		"turbo": "2.11.4",
+		"typescript": "7.1.0-beta",
+		"vite": "8.3.6"
+	},
+	"packageManager": "bun@1.4.4",
+	"license": "MIT",
+	"peerDependencies": {
+		"@octane-xplat/files": "*",
+		"@octane-xplat/ui": "*",
+		"octane": "^0.17.0"
+	}
+}
