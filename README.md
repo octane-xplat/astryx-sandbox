@@ -1,4 +1,4 @@
-# @xplat/astryx-sandbox
+# Astryx Sandbox
 
 > Extraction in progress: the current source requires framework changes newer than the published 0.20.0 packages. The standalone build and typecheck do not yet pass; the framework repository retains the working sandbox until a compatible version is available.
 
